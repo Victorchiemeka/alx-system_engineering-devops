@@ -1,2 +1,2 @@
 #!/bin/bash
-chown -H  vincent:staff _hello
+chown -H  --reference=RFILE _hello vincent:staff
