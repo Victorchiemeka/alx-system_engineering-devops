@@ -6,5 +6,5 @@ iterate=10
 
 for i in $(seq 1 $iterate);
 do
-    echo ${school}
+    echo "${school}"
 done

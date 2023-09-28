@@ -7,7 +7,7 @@ counter=0
 
 while [ $iterate -gt 0 ];
 do
-    echo ${school}
+    echo "${school}"
      counter=$((counter + 1))
      iterate=$((iterate - 1))
 
