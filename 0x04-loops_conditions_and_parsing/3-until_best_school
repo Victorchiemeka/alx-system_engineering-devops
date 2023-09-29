@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# This script is displaying "Best School" 10 times
+
+# Create a variable to store the string.
+string="Best School"
+
+# Create a variable to store the number of times to loop through the string.
+counter=10
+
+# Use the `until` loop to iterate over the string until the counter variable reaches the desired number of loops.
+until [ $counter -eq 0 ]; do
+  # Inside the loop, print the string to the console.
+  echo $string
+  ((counter--))
+done

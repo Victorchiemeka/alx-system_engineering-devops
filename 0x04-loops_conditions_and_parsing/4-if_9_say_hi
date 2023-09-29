@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+# This script is displaying "Best School" 10 times
+
+# Declare variables
+school="Best School"
+iterate=10
+counter=0
+
+# Use a while loop to iterate over the variable `iterate`
+while [ $iterate -gt 0 ]; do
+
+  # If the current iteration is the last one, print the word "Hi"
+  if [ ${counter} == 9 ]; then
+    echo "Hi"
+  fi
+
+  # Print the string "Best School"
+  echo "${school}"
+
+  # Increment the counter variable
+  counter=$((counter + 1))
+
+  # Decrement the variable `iterate`
+  iterate=$((iterate - 1))
+
+done

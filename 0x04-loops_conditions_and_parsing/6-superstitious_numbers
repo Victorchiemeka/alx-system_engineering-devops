@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# Create a variable to store the current number.
+i=1
+
+# Use a case statement to check the current number.
+while [ $i -le 20 ]; do
+  case $i in
+    5)
+      echo "bad luck from China"
+      echo "${i}"
+      ;;
+    10)
+      echo "bad luck from Japan"
+      echo "${i}"
+      ;;
+    18)
+      echo "bad luck from Italy"
+      echo "${i}"
+      ;;
+    *)
+      echo "${i}"
+      ;;
+  esac
+
+  # Increment the variable by 1.
+  i=$((i + 1))
+done
