@@ -1,15 +1,9 @@
 #!/usr/bin/env bash
-# This script is displaying "Best School" 10 times
+# A Bash script that displays Best School 10 times.
 
-# Create a variable to store the string.
-string="Best School"
-
-# Create a variable to store the number of times to loop through the string.
-counter=10
-
-# Use the `until` loop to iterate over the string until the counter variable reaches the desired number of loops.
-until [ $counter -eq 0 ]; do
-  # Inside the loop, print the string to the console.
-  echo $string
-  ((counter--))
+i=0
+until ((i == 10)); # or until [ $i -eq 10 ]; i ++ for print
+do
+	echo "Best School"
+	((i++))
 done
